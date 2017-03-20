@@ -1,0 +1,43 @@
+{
+    "name": "ins",
+    "fileTypes": [
+        "ins"
+    ],
+    "scopeName": "source.ins",
+    "uuid": "9E4413EF-B97B-4BC4-A613-15640530F4D5",
+    "variables": {
+        "label": "[A-Za-z_][A-Za-z_0-9]+"
+    },
+    "patterns": [
+        {
+            "match": "(github)\\s(.+)\\s(.+)\\s(.+)",
+            "captures": {
+                "1": {
+                    "name": "keyword.control"
+                },
+                "2": {
+                    "name": "constant.language"
+                },
+                "3": {
+                    "name": "sconstant.language"
+                },
+                "4": {
+                    "name": "keyword.control"
+                }
+            }
+        },
+        {
+            "match": "(githubToken|alfrescoPath)",
+            "name": "constant.language"
+        },
+        {
+            "match": "\\b(github|local|config)\\b",
+            "name": "keyword.control"
+        },
+        {
+            "begin": "//",
+            "end": "$",
+            "name": "comment.line.double-dash.il"
+        }
+    ]
+}
