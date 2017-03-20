@@ -7,6 +7,7 @@
     "engines": {
         "vscode": "^1.5.0"
     },
+    "icon": "images/icon.png",
     "categories": [
         "Other"
     ],
@@ -20,7 +21,7 @@
                 "extensions": [
                     ".ins"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./configuration.json"
             }
         ],
         "grammars": [
