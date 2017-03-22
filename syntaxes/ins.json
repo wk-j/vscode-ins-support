@@ -10,6 +10,17 @@
     },
     "patterns": [
         {
+            "match": "(option\\s(.+))\\s(.+)",
+            "captures": {
+                "1": {
+                    "name": "keyword.control"
+                },
+                "2": {
+                    "name": "constant.language"
+                }
+            }
+        },
+        {
             "match": "(github)\\s(.+)\\s(.+)\\s(.+)",
             "captures": {
                 "1": {
@@ -19,7 +30,6 @@
                     "name": "constant.language"
                 },
                 "3": {
-                    "name": "sconstant.language"
                 },
                 "4": {
                     "name": "keyword.control"
@@ -27,7 +37,7 @@
             }
         },
         {
-            "match": "(githubToken|alfrescoPath)",
+            "match": "\\b(githubToken|alfrescoPath)\\b",
             "name": "constant.language"
         },
         {
@@ -37,7 +47,7 @@
         {
             "begin": "//",
             "end": "$",
-            "name": "comment.line.double-dash.il"
+            "name": "comment.line.double-dash.ins"
         }
     ]
 }

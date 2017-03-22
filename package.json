@@ -2,7 +2,7 @@
     "name": "vscode-ins-support",
     "displayName": "vscode-ins-support",
     "description": "Language support for Ins",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "wk-j",
     "engines": {
         "vscode": "^1.5.0"
